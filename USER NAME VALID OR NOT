@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner m=new Scanner (System.in);
+        System.out.println("please enter a string");
+        String input1=m.nextLine();
+        System.out.println("please enter a another string ");
+        String input2=m.nextLine();
+        if(input1.equals(input2)){
+            System.out.println("entered strings are same");
+        }else{
+            System.out.println("entered strings are not same");
+        }
+    }
+}
