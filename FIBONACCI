@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class fibonacci {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int num1 = 0, num2 = 1;
+
+        System.out.println("Enter number of terms required in Fibonacci: ");
+        int num = s.nextInt();
+
+        if (num < 0) {
+            System.out.println("Please enter a valid number\n");
+        } else {
+            System.out.println("fibonacci series is:");
+            System.out.println(num1+" "+num2+" "+);
+            for (int i = 2; i < num; i++) {
+                int nextTerm = num1 + num2;
+                System.out.println(nextTerm + " ");
+                num1 = num2;
+                num2 = nextTerm;
+            }
+        }
+    }
+}
