@@ -1,0 +1,16 @@
+/*Total Users: 856
+Staff Users: 126
+Sample Output:
+Student Users: 688*/
+import java.util.Scanner;
+public class main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("total users:");
+        long num=sc.nextInt();
+		System.out.println("Staff users: ");
+		long num1=sc.nextInt();
+		long students=num1/3;
+		System.out.println("student users = "+(num - (num1+students)));
+		}
+}
