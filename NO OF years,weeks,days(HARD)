@@ -1,0 +1,21 @@
+/*Write a Java Program to Convert a Given Number of Days in Terms of Years, Weeks
+& Days.
+Sample Input&Output::
+Enter the number of days:756
+No. of years:2
+No. of weeks:3
+No. of days:5*/
+import java.util.Scanner;
+public class main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number of days:");
+        long num=sc.nextInt();
+        long years=num/365;
+		long weeks=(num%365)/7;
+		long days=(num%365)%7;
+		System.out.println("No. of years: "+years);
+		System.out.println("No. of Weeks: "+weeks);
+		System.out.println("No. of days: "+days);
+		}
+}
