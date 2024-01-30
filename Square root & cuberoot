@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class pattern{
+	public static void main(String[] args){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the perfect square number: ");
+		double num=sc.nextInt();
+		if(num<0){
+			System.out.println("please enter a valid number: ");
+		}else{
+			double squareroot=Math.sqrt(num);
+			double cuberoot=Math.cbrt(num);
+		System.out.println(squareroot+" -"+squareroot);
+		System.out.println(cuberoot+" -"+cuberoot);
+		}
+
+	}
+}
